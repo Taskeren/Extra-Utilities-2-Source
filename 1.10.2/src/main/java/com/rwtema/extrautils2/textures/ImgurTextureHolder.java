@@ -49,8 +49,7 @@ public class ImgurTextureHolder {
 
 	public ImgurTextureHolder(String key) {
 
-		key = patternControlCode.matcher(key).replaceAll("");
-		String url = "https://i.imgur.com/" + key + ".png";
+		String url = key;
 
 		img = new XUDownloadImageData(null, url, loading_texture, new IImageBuffer() {
 			@Nonnull
